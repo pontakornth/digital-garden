@@ -1,21 +1,21 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "Pontakorn's Digital Garden",
+  "url": "https://garden.pontakorn.dev/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "A digital garden for garden.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "A digital garden for garden.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://garden.pontakorn.dev"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Pontakorn Paesaeng",
+    "email": "pontakorn_most@outlook.com",
+    "url": "https://pontakorn.dev"
   }
 }
