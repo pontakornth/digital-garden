@@ -7,20 +7,21 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require('@11ty/eleventy-img')
 
-async function imageShortcode(scr, alt, sizes) {
+async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
     widths: [300, 600, null],
-    formats: ['webp','jpeg']
+    formats: ['avif', 'webp','jpeg']
   });
 
    let imageAttributes = {
      alt,
-     sizes,
+     sizes: sizes || '(min-width: 30em) 50vw, 100vw',
+     'class': "post-image",
      loading: "lazy",
      decoding: "async",
    };
 
-   return Image.generateHTML(metadata, imageAttributes);
+   return `<div class="post-image">${Image.generateHTML(metadata, imageAttributes)}</div>`;
 }
 
 module.exports = function(eleventyConfig) {
