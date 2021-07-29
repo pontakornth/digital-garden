@@ -262,7 +262,7 @@ a[href].direct-link:focus:visited,
 
 
 /* Post CSS */
-.tmpl-post, .tmpl-posts {
+.tmpl-post, .tmpl-posts, .tmpl-list {
   display: flex;
 }
 .post-container {
