@@ -1,4 +1,4 @@
-/* Colors */
+/* Colors and fonts */
 :root {
   --lightgray: #e0e0e0;
   --gray: #C0C0C0;
@@ -6,6 +6,9 @@
   --navy: #17050F;
   --blue: #082840;
   --white: #fff;
+  --default-fonts: -apple-system, system-ui, sans-serif;
+  --body-font: "Bai Jamjuree", var(--default-fonts);
+  --heading-font: "Kanit", var(--default-fonts);
 }
 
 /* Global stylesheet */
@@ -17,10 +20,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, system-ui, sans-serif;
+  font-family: var(--body-font);
   color: var(--darkgray);
   background-color: var(--white);
   height: 100%;
+}
+h1, h2, h3 {
+  font-family: var(--heading-font);
 }
 body {
   display: flex;
@@ -138,6 +144,7 @@ code {
   list-style: none;
   float: left;
   margin-left: 1em;
+  font-family: var(--heading-font);
 }
 .nav-item {
   display: inline-block;
