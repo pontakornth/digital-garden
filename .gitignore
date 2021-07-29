@@ -3,3 +3,4 @@ node_modules/
 package-lock.json
 /img
 .DS_Store
+!/img/cover.jpg
