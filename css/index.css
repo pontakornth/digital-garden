@@ -269,6 +269,7 @@ a[href].direct-link:focus:visited,
   margin:auto;
   width: 90%;
   max-width: 800px;
+  padding-bottom: 2rem;
 }
 .tmpl-post p,
 .tmpl-post li,
