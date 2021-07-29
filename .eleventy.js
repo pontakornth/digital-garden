@@ -5,6 +5,23 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const Image = require('@11ty/eleventy-img')
+
+async function imageShortcode(scr, alt, sizes) {
+  let metadata = await Image(src, {
+    widths: [300, 600, null],
+    formats: ['webp','jpeg']
+  });
+
+   let imageAttributes = {
+     alt,
+     sizes,
+     loading: "lazy",
+     decoding: "async",
+   };
+
+   return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function(eleventyConfig) {
   // Add plugins
@@ -60,6 +77,9 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+
+  // Add image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
