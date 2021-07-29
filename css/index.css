@@ -259,3 +259,23 @@ a[href].direct-link:focus:visited,
   margin: auto;
   text-align: center;
 }
+
+
+/* Post CSS */
+.tmpl-post {
+  display: flex;
+}
+.post-container {
+  margin:auto;
+  width: 90%;
+  max-width: 800px;
+}
+.tmpl-post p,
+.tmpl-post li,
+.tmpl-post img {
+  max-width: unset;
+}
+
+.post-content {
+  width: 100%;
+}
