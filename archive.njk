@@ -4,9 +4,11 @@ permalink: /posts/
 eleventyNavigation:
   key: Archive
   order: 2
+templateClass: tmpl-posts
 ---
 
-<h1>Archive</h1>
-
+<div class="post-container">
+<h1>Posts</h1>
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+</div>
