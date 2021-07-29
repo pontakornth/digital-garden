@@ -20,6 +20,11 @@ body {
   font-family: -apple-system, system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-flow: column;
 }
 p:last-child {
   margin-bottom: 0;
@@ -42,9 +47,9 @@ a[href]:visited {
 main {
   padding: 1rem;
 }
-main :first-child {
+/* main :first-child:not(.tmpl-home) {
   margin-top: 0;
-}
+} */
 header {
   border-bottom: 1px dashed var(--lightgray);
 }
@@ -246,4 +251,14 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+/* Index centering */
+.tmpl-home {
+  flex: 1;
+  display: flex;
+}
+.index-content {
+  margin: auto;
+  text-align: center;
 }
