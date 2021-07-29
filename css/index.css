@@ -279,3 +279,10 @@ a[href].direct-link:focus:visited,
 .post-content {
   width: 100%;
 }
+.post-image {
+  text-align: center;
+}
+.post-image img {
+  max-width: 100%;
+  height: auto;
+}
