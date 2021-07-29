@@ -294,3 +294,9 @@ a[href].direct-link:focus:visited,
   max-width: 100%;
   height: auto;
 }
+
+/* Custom CSS */
+.profile picture img {
+  width: 200px;
+  border-radius: 99999px;
+}
