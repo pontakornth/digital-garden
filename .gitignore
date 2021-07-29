@@ -1,6 +1,6 @@
 _site/
 node_modules/
 package-lock.json
-/img
+/img/**/*.*
 .DS_Store
 !/img/cover.jpg
