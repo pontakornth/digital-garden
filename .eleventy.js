@@ -22,7 +22,9 @@ async function imageShortcode(src, alt, sizes) {
      decoding: "async",
    };
 
-   return `<div class="post-image">${Image.generateHTML(metadata, imageAttributes)}</div>`;
+   return `<div class="post-image">${Image.generateHTML(metadata, imageAttributes, {
+     whitespaceMode: "inline"
+   })}</div>`;
 }
 
 module.exports = function(eleventyConfig) {
