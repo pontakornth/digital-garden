@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "pontakorn-garden",
+  "version": "1.0.0",
+  "description": "Pontakorn's digital garden.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/pontakornth/digital-garden"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Pontakorn Paesaeng",
+    "email": "pontakorn_most@outlook.com",
+    "url": "https://pontakorn.dev"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/pontakornth/digital-garden/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://garden.pontakorn.dev",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.1.6",
