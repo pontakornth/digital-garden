@@ -7,8 +7,8 @@
   --blue: #082840;
   --white: #fff;
   --default-fonts: -apple-system, system-ui, sans-serif;
-  --body-font: "Bai Jamjuree", var(--default-fonts);
-  --heading-font: "Kanit", var(--default-fonts);
+  --body-font: "IBM Plex Sans Thai Looped", var(--default-fonts);
+  --heading-font: "IBM Plex Sans Thai", var(--default-fonts);
 }
 
 /* Global stylesheet */
@@ -198,6 +198,10 @@ code {
 .tmpl-home .postlist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
+}
+
+.home-caption {
+  margin: 1rem auto;
 }
 
 
