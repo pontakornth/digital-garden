@@ -49,7 +49,7 @@ export default {
 </script>
 <style>
   .styled {
-    color: v-bind(color)
+    color: v-bind(color);
   }
 </style>
 ```
