@@ -11,9 +11,11 @@ eleventyNavigation:
   มากนัก ลองค้นโพสต์จาก tags ที่มีอยู่ดูครับ
   </p>
   {% set tagList = collections.tagList | filterTagList %}
+  <div class="tag-list tag-list-long">
   {% for tag in tagList %}
    {% set tagUrl %}/tags/{{tag | slug }}/{% endset %}
    <a href="{{ tagUrl | url }}" class="post-tag">{{tag}}</a>
   {% endfor %}
+  </div>
 </div>
 
